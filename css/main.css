@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.04vw;
+  font-weight: 500;
+  margin: 0;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/*Шапулька*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 16px 135px;
+  box-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-title {
+  font-size: 32px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  text-decoration: none;
+  font-size: 18px;
+  outline: none;
+  color: #000;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: #000;
+}
+
+.header-link-active {
+  color: #000;
+  font-size: 18px;
+}
+
+.header-link-point {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  margin: 0 16px;
+  color: #000;
+}
+
+.header-button {
+  width: 170px;
+  height: 40px;
+  font-size: 16px;
+  border: 2px solid #000;
+  background: #fff;
+  border-radius: 4px;
+}
+
+
+
+
+/*----------Главная-----------*/
+
+
+.hero {
+  margin-bottom: 10px;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax( 290px,1fr));
+  grid-gap: 20px;
+}
+
+
+.hero__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hero__title {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero__prof {
+  color: #4facfe;
+  white-space: nowrap;
+}
+
+.hero__subtitle {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.hero__description {
+  font-size: 16px;
+}
+
+.hero__links {
+  display: flex;
+}
+
+.hero__link {
+  margin-right: 15px;
+  font-size: 30px;
+  color: #000;
+}
+
+.hero__link:hover {
+  color: #72afd3;
+}
+
+
+.hero__box {
+  max-width: 500px;
+  justify-self: center;
+  overflow: hidden;
+  border: 10px solid #fff;
+
+  background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+
+  animation: ava-animate 5s infinite alternate;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.hero__box-img {
+  animation: ava-bg 3s infinite alternate;
+}
+
+
+
+@keyframes ava-animate {
+  0% {
+    border-radius: 62% 38% 72% 28% / 67% 32% 68% 33%;
+  }
+
+  40% {
+    border-radius: 37% 63% 53% 47% / 67% 32% 68% 33%;
+  }
+
+  60% {
+    border-radius: 23% 77% 39% 61% / 78% 54% 46% 22%;
+  }
+
+  100% {
+    border-radius: 18% 82% 24% 76% / 43% 54% 46% 57%;
+  }
+}
+
+@keyframes ava-bg {
+  from {
+    backdrop-filter: hue-rotate(0);
+  }
+
+  to {
+    backdrop-filter: hue-rotate(20deg);
+  }
+}
+
+
+/*-------------О НАС----------------*/
+
+.about {
+  margin-bottom: 160px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+}
+
+.about .main img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  margin-right: 60px;
+}
+
+.all-text {
+  margin-top: 30px;
+  width: 600px;
+  max-width: 100%;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-around;
+}
+
+
+.all-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.all-text p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.kart {
+  display: flex; 
+  align-items: center;
+}
+
+.kart img {
+  width: 211px !important;
+  height: auto;
+  margin-right: 10px;
+}
+
+
+/*------------Слайдер------------*/
+
+.slider-wrapper {
+  position: relative;
+}
+.slider-wrapper .slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2.2rem;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover {
+  background: #404040;
+}
+.slider-wrapper .slide-button#prev-slide {
+  left: -25px;
+  display: none;
+}
+.slider-wrapper .slide-button#next-slide {
+  right: -25px;
+}
+.slider-wrapper .image-list {
+  display: flex; 
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.slider-wrapper .image-list::-webkit-scrollbar {
+  display: none;
+}
+.slider-wrapper .image-list .image-item {
+  flex: 0 0 auto; 
+  width: 325px;
+  height: 400px;
+  object-fit: cover;
+}
+.container .slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider-scrollbar .scrollbar-track {
+  background: #ccc;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: relative;
+}
+.slider-scrollbar:hover .scrollbar-track {
+  height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  cursor: grab;
+  border-radius: inherit;
+}
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+.text {
+   margin-bottom: 160px;
+}
+
+.text a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+}
+
+
+/*-----Контакты---------*/
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vw;
+}
+
+
+.section__title {
+  font-size: 2.4vw;
+  font-weight: 600;
+  margin-bottom: 4vw;
+}
+
+
+.contact__description {
+  font-size: 1.2vw;
+}
+.contact__box {
+  width: 55%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 45%; 
+}
+
+.contact__data{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.contact__subtitle{
+  font-size: .938rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+
+.contact__description{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: 500;
+}
+
+.contact__icon{
+  font-size: 1.25rem;
+}
+
+.contact__inputs {
+  width: 100%;
+}
+
+.contact__content{
+  position: relative;
+    margin-bottom: 3vw;
+  height: 3rem;
+  border-bottom: 1px solid #000;
+}
+
+.contact__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  padding: 1rem 1rem 1rem 0;
+  background: none;
+
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+
+.contact__label{
+  position: absolute;
+  top: .75rem;
+  width: 100%;
+  font-size: .813rem;
+  transition: .3s;
+}
+
+.contact__area{
+  height: 7rem;
+}
+
+.contact__area textarea{
+  resize: none;
+}
+
+.contact__input,
+.contact__label,
+.contact__area textarea {
+  width: 100%;
+}
+
+.button {
+  margin-bottom: 160px;
+  margin-right: 21vw;
+  width: 15vw;
+  height: 3vw;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+.contact__input:focus + .contact__label{
+  top: -.75rem;
+  left: 0;
+  font-size: .813rem;
+  z-index: 10;
+}
+
+.contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
+  top: -.75rem;
+  font-size: .813rem;
+  z-index: 10;
+}
+
+/*--------подвал-------*/
+footer {
+  background-color: #EEEEEE;
+  color: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Дополнительные стили для улучшения внешнего вида */
+p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*-------------Мобильная версия-------------*/
+
+@media only screen and (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+    scroll-snap-type: x mandatory;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .hero {
+    padding-top: 30px;
+  }
+
+  .hero__container {
+    grid-row-gap: 20px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .hero__subtitle {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .hero__description {
+    font-size: 14px;
+  }
+
+  .hero__about {
+    text-align: center;
+  }
+
+  .hero__links {
+    justify-content: center;
+  }
+
+  .hero__box {
+    max-width: 350px;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .about{
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+  }
+  .all-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 650px){
+  .about .main img {
+    margin-bottom: 35px;
+  }  
+
+  .all-text h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}

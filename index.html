@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+	<title>Document</title>
+</head>
+<body>
+<!-- 	шапочка -->
+	<header class="header">
+			<div class="header-logo">
+				<span class="header-logo-title">ВВР</span>
+			</div>
+
+			<nav class="header-nav">
+				<span class="header-link-active">Главная</span>
+				<div class="header-link-point"></div>
+				<a class="header-link" href="#about">О нас</a>
+				<div class="header-link-point"></div>
+				<a class="header-link" href="#katalog">Каталог</a>
+				<div class="header-link-point"></div>
+				<a class="header-link" href="#contact">Контакты</a>
+			</nav>
+
+			<button class="primary-button-corner header-button">+7 841 220 70 58</button>
+		</header>
+
+<!--   	Главная -->
+
+		  <section class="hero">
+    <div class="container hero__container">
+      <div class="hero__about">
+        <h1 class="hero__title">Мебельная компания</h1>
+        <h2 class="hero__subtitle">ВВР Мебель</h2>
+        <p class="hero__description">
+          Откройте для себя мир утонченного дизайна и функциональности. Наша компания сочетает в себе современный стиль и практичность.
+        </p>
+
+
+        <div class="hero__links">
+          <a class="hero__link" href="https://mkvvr.ru/" target="_blank"><i class='bx bxl-vk'></i></a>
+          <a class="hero__link" href="https://mkvvr.ru/"><i class='bx bxl-facebook'></i></a>
+          <a class="hero__link" href="https://mkvvr.ru/"><i class='bx bxl-instagram'></i></a>
+        </div>
+
+
+      </div>
+
+      <div class="hero__box">
+        <img class="hero__box-img" src="img/glavnaya.png" alt="">
+      </div>
+
+    </div>
+
+  </div>
+
+  </section>
+
+
+<!--   О нас -->
+
+	<section class="about" id="about">
+		<div class="container">
+		<div class="main">
+			<img src="img/onas.png">
+			<div class="all-text">
+				<h1>Мебельная комания<br>ВВР Мебель</h1>
+				<p>Мы стремимся удовлетворить самые высокие стандарты качества, предлагая продукцию, которая не только красива, но и функциональна. Вне зависимости от того, нужны ли вам стильные кухонные гарнитуры, удобные мягкие диваны или эргономичные офисные решения.</p>
+				<div class="kart">
+					<img src="img/st1.png">
+					<img src="img/st2.png">
+					
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+<!-- 	Слайдер	 -->
+	<section id="katalog">
+	<div class="container">
+		<div class="slider-wrapper">
+		    <button id="prev-slide" class="slide-button material-symbols-rounded">&lt;</button>
+		    <ul class="image-list">
+		      <li class="image-item"><img src="img/img-1.jpg" alt="img-1"></li>
+		      <li class="image-item"><img src="img/img-2.jpg" alt="img-2"></li>
+		      <li class="image-item"><img src="img/img-3.jpg" alt="img-3"></li>
+		      <li class="image-item"><img src="img/img-4.jpg" alt="img-4"></li>
+		      <li class="image-item"><img src="img/img-5.jpg" alt="img-5"></li>
+		      <li class="image-item"><img src="img/img-6.jpg" alt="img-6"></li>
+		      <li class="image-item"><img src="img/img-7.jpg" alt="img-7"></li>
+		      <li class="image-item"><img src="img/img-8.jpg" alt="img-8"></li>
+		      <li class="image-item"><img src="img/img-9.jpg" alt="img-9"></li>
+		      <li class="image-item"><img src="img/img-10.jpg" alt="img-10"></li>
+		    </ul>
+		    <button id="next-slide" class="slide-button material-symbols-rounded">&gt;</button>
+		  </div>
+		  <div class="slider-scrollbar">
+		    <div class="scrollbar-track">
+		      <div class="scrollbar-thumb"></div>
+		    </div>
+		  </div>
+		  <div class="text">
+		  	    <a href="https://mkvvr.ru/spalni/">Ознакомиться с каталогом подробнее можно на сайте &rarr;</a>
+		  </div>
+		</div>
+	</section>
+
+<!-- 	------контакты------ -->
+ 	<section class="contact section container" id="contact">                
+        <div class="contact__container grid">
+            <div class="contact__box">
+                <h2 class="section__title">
+                    Свяжитесь с нами  <br> с помощью любой контактной <br> информации
+                </h2>
+
+            <div class="contact__data">
+                <div class="contact__information">
+                    <h3 class="contact__subtitle">Позвоните нам</h3>
+                        <span class="contact__description">
+                            +7 (8412) 207-058
+                        </span>
+            </div>
+
+            <div class="contact__information">
+                <h3 class="contact__subtitle">Напишите нам</h3>
+                    <span class="contact__description"> 
+						sales@mkvvr.ru
+                    </span>
+            </div>
+        </div>
+        </div>
+
+        <form method="POST" class="contact__form">
+            <div class="contact__inputs">
+                <div class="contact__content">
+                    <input type="email" name="email" placeholder=" " class="contact__input">
+                    <label for="" class="contact__label">Email</label>
+                </div>
+
+            	<div class="contact__content">
+                    <input type="text" name="name" placeholder=" " class="contact__input">
+                    <label for="" class="contact__label">Имя</label>
+                </div>
+
+                <div class="contact__content contact__area">
+                    <textarea name="message" placeholder=" " class="contact__input"></textarea>
+                    <label for="" class="contact__label">Сообщение</label>
+                </div>
+            </div>
+				<button name="submit" class="button button--flex">
+                    	Отправить
+                </button>
+        </form>
+        </div>
+    </section>
+<!--    --------подвал-------- -->
+    <footer>
+    	<div class="container">
+      <p>&copy; 2023 ВВР Мебель. Все права защищены.</p>
+    </div>
+    </footer>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
